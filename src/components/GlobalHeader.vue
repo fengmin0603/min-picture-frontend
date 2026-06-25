@@ -23,7 +23,7 @@
           <div v-if="loginUserStore.loginUser.id">
             <a-dropdown>
               <a-space>
-                <a-avatar :src="loginUserStore.loginUser.userAvatar" />
+                <a-avatar :src="loginUserStore.loginUser.userAvatar ?? '/images/avatar.png'" />
                 {{ loginUserStore.loginUser.userAccount ?? '无名' }}
               </a-space>
               <template #overlay>

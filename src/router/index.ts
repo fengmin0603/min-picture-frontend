@@ -4,6 +4,7 @@ import UserLoginPage from '@/pages/user/UserLoginPage.vue'
 import UserRegisterPage from '@/pages/user/UserRegisterPage.vue'
 import UserManagePage from '@/pages/admin/UserManagePage.vue'
 import AddPicturePage from '@/pages/picture/AddPicturePage.vue'
+import AddPictureBatchPage from '@/pages/picture/AddPictureBatchPage.vue'
 import PictureDetailPage from '@/pages/picture/PictureDetailPage.vue'
 import PictureManagePage from '@/pages/admin/PictureManagePage.vue'
 
@@ -34,6 +35,11 @@ const router = createRouter({
       path: '/add_picture',
       name: '创建图片',
       component: AddPicturePage,
+    },
+    {
+      path: '/add_picture/batch',
+      name: '批量创建图片',
+      component: AddPictureBatchPage,
     },
     {
       path: '/picture/:id',
